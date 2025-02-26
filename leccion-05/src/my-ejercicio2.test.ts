@@ -14,18 +14,18 @@ describe('Pruebas Ejercicio 2 Login', () => {
   });
 
   it('Retornar false si el correo no está definido', () => {
-    newLogin.contraseña = 'password';
-    expect(newLogin._validos()).to.eqls(false);
+    newLogin.contraseña = 'password'
+    expect(newLogin._validos()).to.eqls(false)
   });
 
   it('Retornar false si la contraseña no está definida', () => {
-    newLogin.correo = 'test@example.com';
-    expect(newLogin._validos()).to.eqls(false);
+    newLogin.correo = 'test@example.com'
+    expect(newLogin._validos()).to.eqls(false)
   });
 
   it('Retornar true si el correo y la contraseña son válidos', () => {
-    newLogin.correo = 'test@example.com';
-    newLogin.contraseña = 'password';
-    expect(newLogin._validos()).to.eqls(true);
-  });
-});
+    newLogin.correo = 'test@example.com'
+    newLogin.contraseña = 'password'
+    expect(newLogin._validos()).to.eqls(true)
+  })
+})
